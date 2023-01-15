@@ -2,19 +2,26 @@ vim.cmd.packadd("packer.nvim")
 return require('packer').startup(function(use)
     -- Package manager
     use 'wbthomason/packer.nvim'
+
+    -- Vim motion game
     use "ThePrimeagen/vim-be-good"
 
+    -- Colorsheme
     use "EdenEast/nightfox.nvim"
 
+    -- Fuzzy finder
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.0",
         requires = { { "nvim-lua/plenary.nvim" } }
     }
 
+    -- Intentation symbol
     use { "lukas-reineke/indent-blankline.nvim" }
 
+    -- Git integration
     use { "/tpope/vim-fugitive" }
 
+    -- Highlighting
     use { "nvim-treesitter/nvim-treesitter",  run = ":TSUpdate" }
 
     use {
