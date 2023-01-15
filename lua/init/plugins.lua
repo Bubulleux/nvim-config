@@ -24,6 +24,18 @@ return require('packer').startup(function(use)
     -- Highlighting
     use { "nvim-treesitter/nvim-treesitter",  run = ":TSUpdate" }
 
+    -- Status line
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
+    -- Comment line
+    use { 'numToStr/Comment.nvim' }
+
+    -- Witch keys
+    use { "folke/which-key.nvim" }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
