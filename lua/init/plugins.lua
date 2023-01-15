@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
     use { "/tpope/vim-fugitive" }
 
+    use { "nvim-treesitter/nvim-treesitter",  run = ":TSUpdate" }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
