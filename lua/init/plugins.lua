@@ -36,6 +36,9 @@ return require('packer').startup(function(use)
     -- Witch keys
     use { "folke/which-key.nvim" }
 
+    -- File tree
+    use { 'nvim-tree/nvim-tree.lua' }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
