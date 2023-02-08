@@ -22,3 +22,5 @@ vim.o.pastetoggle = "<F3>"
 
 vim.o.hlsearch = false
 vim.o.incsearch = true
+
+vim.o.mouse = ""
