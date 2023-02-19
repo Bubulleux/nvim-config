@@ -7,7 +7,7 @@ lsp.ensure_installed({
     "clangd",
     "pylsp",
     "cmake",
-    "sumneko_lua",
+    "lua_ls",
 })
 
 lsp.setup()
