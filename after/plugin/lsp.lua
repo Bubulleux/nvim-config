@@ -7,7 +7,10 @@ lsp.ensure_installed({
     "clangd",
     "pylsp",
     "cmake",
-    "lua_ls",
+    "sumneko_lua",
+    "html",
+    "cssls",
+    "tsserver",
 })
 
 lsp.setup()
