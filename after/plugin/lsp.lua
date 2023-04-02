@@ -33,7 +33,6 @@ lsp.ensure_installed({
     "tsserver",
 })
 
-
 lsp.setup()
 
 vim.diagnostic.config({
