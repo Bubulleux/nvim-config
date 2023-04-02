@@ -1,8 +1,8 @@
 vim.opt.signcolumn = "yes"
 
 local lsp = require('lsp-zero').preset({
-    manage_nvim_cmp = {     
-         set_sources = 'recommended',
+    manage_nvim_cmp = {
+        set_sources = 'recommended',
         set_basic_mappings = true,
         set_extra_mappings = true,
     }
@@ -32,6 +32,7 @@ lsp.ensure_installed({
     "cssls",
     "tsserver",
 })
+
 
 lsp.setup()
 
