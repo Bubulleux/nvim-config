@@ -24,3 +24,9 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 vim.o.mouse = ""
+
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "leadmultispace:|⋅⋅⋅"
+vim.opt.listchars:append "trail:|"
+

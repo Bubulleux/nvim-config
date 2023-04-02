@@ -15,9 +15,6 @@ return require('packer').startup(function(use)
         requires = { { "nvim-lua/plenary.nvim" } }
     }
 
-    -- Intentation symbol
-    use { "lukas-reineke/indent-blankline.nvim" }
-
     -- Git integration
     use { "/tpope/vim-fugitive" }
 
@@ -41,6 +38,7 @@ return require('packer').startup(function(use)
 
     use {
         'VonHeikemen/lsp-zero.nvim',
+        branch = "v2.x",
         requires = {
             -- LSP Support
             {'neovim/nvim-lspconfig'},
