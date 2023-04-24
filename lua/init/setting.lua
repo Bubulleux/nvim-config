@@ -16,7 +16,7 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.cmd.colorscheme("darcula")
+vim.cmd.colorscheme("onedark")
 
 vim.o.pastetoggle = "<F3>"
 
