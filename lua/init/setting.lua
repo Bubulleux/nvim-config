@@ -16,7 +16,7 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.cmd.colorscheme("nightfox")
+vim.cmd.colorscheme("darcula")
 
 vim.o.pastetoggle = "<F3>"
 
@@ -24,6 +24,8 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 vim.o.mouse = ""
+
+vim.o.cursorline = true
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"

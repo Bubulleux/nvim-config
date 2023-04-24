@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
     use "ThePrimeagen/vim-be-good"
 
     -- Colorsheme
-    use "EdenEast/nightfox.nvim"
+use "doums/darcula"
 
     -- Fuzzy finder
     use {
