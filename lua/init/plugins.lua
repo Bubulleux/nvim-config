@@ -36,6 +36,18 @@ return require('packer').startup(function(use)
     -- File tree
     use { 'nvim-tree/nvim-tree.lua' }
 
+    -- Dart & Flutter
+    use {
+        'akinsho/flutter-tools.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim', -- optional for vim.ui.select
+        },
+    }
+
+    -- dap
+    use 'mfussenegger/nvim-dap'
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = "v2.x",
