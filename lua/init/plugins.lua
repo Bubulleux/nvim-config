@@ -48,6 +48,9 @@ return require('packer').startup(function(use)
     -- dap
     use 'mfussenegger/nvim-dap'
 
+    -- dap-ui
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = "v2.x",
