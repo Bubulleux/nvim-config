@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
 
     -- Colorsheme
     use "joshdick/onedark.vim"
+    use "catppuccin/vim"
 
     -- Fuzzy finder
     use {
