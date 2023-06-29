@@ -35,4 +35,6 @@ vim.opt.listchars:append "precedes:<"
 
 vim.o.exrc = true
 
-vim.o.wildmode = "longest:full"
+vim.o.wildmode = "longest:full,full"
+
+vim.opt.clipboard = "unnamedplus"

@@ -22,3 +22,13 @@ vim.keymap.set("v", ">", ">gv")
 
 vim.keymap.set("n", "<C-J>", ":bnext<CR>")
 vim.keymap.set("n", "<C-K>", ":bprevious<CR>")
+
+-- Copy to clipboard
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+yg_')
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>yy", '"+yy')
+
+
+vim.keymap.set("n", "<leader>p", '"+p')
+vim.keymap.set("n", "<leader>P", '"P')
