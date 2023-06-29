@@ -33,5 +33,6 @@ vim.opt.listchars:append "nbsp:%"
 vim.opt.listchars:append "extends:>"
 vim.opt.listchars:append "precedes:<"
 
-
 vim.o.exrc = true
+
+vim.o.wildmode = "longest:full"
