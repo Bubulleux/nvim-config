@@ -1,8 +1,8 @@
-vim.keymap.set({"n", "v", "i"}, "<Left>", "<Nop>")
-vim.keymap.set({"n", "v", "i"}, "<Right>", "<Nop>")
-vim.keymap.set({"n", "v", "i"}, "<Up>", "<Nop>")
-vim.keymap.set({"n", "v", "i"}, "<Down>", "<Nop>")
-vim.keymap.set({"n", "v", "i"}, "<Esc>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<Left>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<Right>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<Up>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<Down>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<Esc>", "<Nop>")
 vim.keymap.set("n", "<Space>", "<Nop>")
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -32,3 +32,5 @@ vim.keymap.set("n", "<leader>yy", '"+yy')
 
 vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>P", '"P')
+
+vim.keymap.set("n", "<leader>fa", ":LspZeroFormat<CR>")
