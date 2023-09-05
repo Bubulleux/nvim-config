@@ -22,17 +22,6 @@ lsp.set_sign_icons({
     info = '»'
 })
 
-
-lsp.ensure_installed({
-    "clangd",
-    "pylsp",
-    "cmake",
-    "sumneko_lua",
-    "html",
-    "cssls",
-    "tsserver",
-})
-
 lsp.setup()
 
 vim.diagnostic.config({

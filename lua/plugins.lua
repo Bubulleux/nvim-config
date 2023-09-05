@@ -1,10 +1,8 @@
 vim.cmd.packadd("packer.nvim")
+
 return require('packer').startup(function(use)
     -- Package manager
     use 'wbthomason/packer.nvim'
-
-    -- Vim motion game
-    use "ThePrimeagen/vim-be-good"
 
     -- Colorsheme
     use "joshdick/onedark.vim"

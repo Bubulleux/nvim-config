@@ -17,8 +17,8 @@ vim.keymap.set("n", "N", "Nzz")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set("v", "<", "<gv")
-vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<S-Tab>", "<gv")
+vim.keymap.set("v", "<Tab>", ">gv")
 
 vim.keymap.set("n", "<C-J>", ":bnext<CR>")
 vim.keymap.set("n", "<C-K>", ":bprevious<CR>")
