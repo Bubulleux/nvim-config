@@ -17,6 +17,7 @@ git
 tar
 curl
 unzip
+ripgrep
 ```
 
 ## Configured Debug adapter
