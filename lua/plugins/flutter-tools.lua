@@ -5,7 +5,7 @@ return {
         'nvim-lua/plenary.nvim',
         'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
-    opt = {
+    opts = {
         debugger = {
             enable = true,
             run_via_dap = false,

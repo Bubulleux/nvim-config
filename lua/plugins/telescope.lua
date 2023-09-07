@@ -1,4 +1,5 @@
 return {
+    {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.2',
     dependencies = { 'nvim-lua/plenary.nvim' },
@@ -13,4 +14,5 @@ return {
         { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Jump list" },
         { "<leader>r", "<cmd>Telescope lsp_references<cr>", desc = "Lsp References" },
     },
+}
 }
