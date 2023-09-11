@@ -12,6 +12,8 @@ return {
                 "html-lsp",
                 "python-lsp-server",
                 "typescript-language-server",
+                "texlab",
+                "lua-language-server",
             },
         },
         ---@param opts MasonSettings | {ensure_installed: string[]}

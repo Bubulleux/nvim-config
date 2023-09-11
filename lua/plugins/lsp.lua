@@ -38,7 +38,10 @@ return {
                 info = '»'
             })
 
-            require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+            local lspConfig = require("lspconfig")
+            lspConfig.lua_ls.setup(lsp.nvim_lua_ls())
+
+            lsp.configure("ltex", { settings = { ltex = { language = "auto" } } })
 
             lsp.setup()
 

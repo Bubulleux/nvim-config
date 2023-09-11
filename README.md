@@ -18,6 +18,7 @@ tar
 curl
 unzip
 ripgrep
+languagetool
 ```
 
 ## Configured Debug adapter
