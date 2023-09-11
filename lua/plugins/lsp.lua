@@ -41,7 +41,7 @@ return {
             local lspConfig = require("lspconfig")
             lspConfig.lua_ls.setup(lsp.nvim_lua_ls())
 
-            lsp.configure("ltex", { settings = { ltex = { language = "auto" } } })
+            lspConfig.ltex.setup({ settings = { ltex = { language = "fr" } } })
 
             lsp.setup()
 
