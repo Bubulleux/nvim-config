@@ -36,3 +36,5 @@ map("n", "<leader>yy", '"+yy')
 -- map("n", "<leader>P", '"P')
 
 map("n", "<leader>fa", ":LspZeroFormat<CR>", { desc = "Format all file" })
+
+map("i", "£", "\\")
