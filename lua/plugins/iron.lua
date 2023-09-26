@@ -1,6 +1,10 @@
 return {
     "Vigemus/iron.nvim",
     lazy = true,
+    keys = {
+        { "<leader>i", "", desc = "+iron"},
+        { "<leader>il", "<plug>(iron-send-line)"},
+    },
     config = function(_, opts)
         iron = require("iron.core")
         iron.setup {
