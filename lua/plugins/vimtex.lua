@@ -11,9 +11,11 @@ return {
             out_dit = "./out/",
             options = {
                 "-verbose",
+                "-file-line-error",
+                "-synctex=1",
+                "-interaction=nonstopmode",
                 "-pvc",
                 "-pdf",
-                "~/.config/nvim/latex/template.cls",
             },
         }
     end,

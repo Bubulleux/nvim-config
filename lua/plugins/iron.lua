@@ -22,7 +22,7 @@ return {
                 },
                 -- How the repl window will be displayed
                 -- See below for more information
-                repl_open_cmd = require('iron.view').right(20),
+                repl_open_cmd = require('iron.view').right(70),
             },
             -- Iron doesn't set keymaps by default anymore.
             -- You can set them here or manually add keymaps to the functions in iron.core
