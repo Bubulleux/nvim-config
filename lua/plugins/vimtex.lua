@@ -12,8 +12,6 @@ return {
             options = {
                 "-verbose",
                 "-file-line-error",
-                "-synctex=1",
-                "-interaction=nonstopmode",
                 "-pvc",
                 "-pdf",
             },
