@@ -3,7 +3,14 @@ return {
     lazy = true,
     keys = {
         { "<leader>i", "", desc = "+iron"},
-        { "<leader>il", "<plug>(iron-send-line)"},
+        { "<leader>il",  "", desc = ""},
+        { "<leader>if",  "", desc = ""},
+        { "<leader>ic",  "", desc = ""},
+        { "<leader>im",  "", desc = ""},
+        { "<leader>iM",  "", desc = ""},
+        { "<leader>if",  "", desc = ""},
+        { "<leader>if",  "", desc = ""},
+        { "<leader>if",  "", desc = ""},
     },
     config = function(_, opts)
         iron = require("iron.core")
@@ -17,7 +24,7 @@ return {
                         command = { "zsh" }
                     },
                     ocaml = {
-                        command = { "ocaml" }
+                        command = { "utop" }
                     }
                 },
                 -- How the repl window will be displayed
@@ -27,19 +34,19 @@ return {
             -- Iron doesn't set keymaps by default anymore.
             -- You can set them here or manually add keymaps to the functions in iron.core
             keymaps = {
-                send_motion = "<space>sc",
-                visual_send = "<space>sc",
-                send_file = "<space>sf",
-                send_line = "<space>sl",
-                send_until_cursor = "<space>su",
-                send_mark = "<space>sm",
-                mark_motion = "<space>mc",
-                mark_visual = "<space>mc",
-                remove_mark = "<space>md",
-                cr = "<space>s<cr>",
-                interrupt = "<space>s<space>",
-                exit = "<space>sq",
-                clear = "<space>cl",
+                send_motion = "<leader>ic",
+                visual_send = "<leader>ic",
+                send_file = "<leader>if",
+                send_line = "<leader>il",
+                send_until_cursor = "<leader>iu",
+                send_mark = "<leader>im",
+                mark_motion = "<leader>iM",
+                mark_visual = "<leader>iM",
+                remove_mark = "<leader>id",
+                cr = "<leader>i<cr>",
+                interrupt = "<leader>i<space>",
+                exit = "<leader>iq",
+                clear = "<leader>ic",
             },
             -- If the highlight is on, you can change how it looks
             -- For the available options, check nvim_set_hl
