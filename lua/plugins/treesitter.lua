@@ -11,7 +11,8 @@ return {
     ---@type TSConfig
     opts = {
         ensure_installed = { "c", "cpp", "python", "lua", "vim", "html",
-            "css", "javascript", "json", "latex", "markdown", },
+            "css", "javascript", "json", "latex", "markdown", "markdown_inline",
+            "ocaml" },
 
         -- Install parsers synchronously (only applied to `ensure_installed`)
         sync_install = false,
