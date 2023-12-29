@@ -16,7 +16,7 @@ opt.scrolloff = 8
 opt.colorcolumn = "80"
 
 
-vim.cmd.colorscheme("catppuccin_macchiato")
+-- vim.cmd.colorscheme("catppuccin_macchiato")
 
 opt.pastetoggle = "<F3>"
 
@@ -27,14 +27,14 @@ opt.mouse = ""
 
 opt.cursorline = true
 
-opt.list = true
-opt.listchars:append "lead:⋅"
-opt.listchars:append "nbsp:%"
-opt.listchars:append "extends:>"
-opt.listchars:append "precedes:<"
+-- opt.list = true
+-- opt.listchars:append "lead:⋅"
+-- opt.listchars:append "nbsp:%"
+-- opt.listchars:append "extends:>"
+-- opt.listchars:append "precedes:<"
 
-opt.exrc = true
-
-opt.wildmode = "longest:full,full"
+-- opt.exrc = true
+--
+-- opt.wildmode = "longest:full,full"
 
 opt.clipboard = "unnamedplus"

@@ -17,5 +17,5 @@ require("lazy").setup({
     defaults = {
         lazy = false,
     },
-    install = { colorscheme = { "catppuccin_macchiato", "habamax" }},
+    -- install = { colorscheme = { "catppuccin_macchiato", "habamax" }},
 })

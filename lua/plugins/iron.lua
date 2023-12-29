@@ -1,17 +1,17 @@
 return {
     "Vigemus/iron.nvim",
     lazy = true,
-    keys = {
-        { "<leader>i", "", desc = "+iron"},
-        { "<leader>il",  "", desc = ""},
-        { "<leader>if",  "", desc = ""},
-        { "<leader>ic",  "", desc = ""},
-        { "<leader>im",  "", desc = ""},
-        { "<leader>iM",  "", desc = ""},
-        { "<leader>if",  "", desc = ""},
-        { "<leader>if",  "", desc = ""},
-        { "<leader>if",  "", desc = ""},
-    },
+    -- keys = {
+    --     { "<leader>i", "", desc = "+iron"},
+    --     { "<leader>il",  "", desc = ""},
+    --     { "<leader>if",  "", desc = ""},
+    --     { "<leader>ic",  "", desc = ""},
+    --     { "<leader>im",  "", desc = ""},
+    --     { "<leader>iM",  "", desc = ""},
+    --     { "<leader>if",  "", desc = ""},
+    --     { "<leader>if",  "", desc = ""},
+    --     { "<leader>if",  "", desc = ""},
+    -- },
     config = function(_, opts)
         iron = require("iron.core")
         iron.setup {
