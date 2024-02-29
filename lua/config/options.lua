@@ -33,8 +33,8 @@ opt.cursorline = true
 -- opt.listchars:append "extends:>"
 -- opt.listchars:append "precedes:<"
 
--- opt.exrc = true
---
--- opt.wildmode = "longest:full,full"
+opt.exrc = true
+
+opt.wildmode = "longest:full,full"
 
 opt.clipboard = "unnamedplus"
