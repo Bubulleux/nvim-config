@@ -8,7 +8,7 @@ return {
     opts = {
         debugger = {
             enable = true,
-            run_via_dap = false,
+            run_via_dap = true,
         },
     }
 }
