@@ -56,6 +56,10 @@
 
 return {
     "mfussenegger/nvim-dap",
+    config = function()
+        require("dap").configurations.dart = {}
+        require("dap.ext.vscode").load_launchjs()
+    end,
     dependencies = {
         -- fancy UI for the debugger
         {
