@@ -7,9 +7,9 @@ opt.wrap = false
 
 opt.tabstop = 4
 opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
-opt.smartindent = true
+opt.expandtab = fasle
+-- opt.autoindent = true
+-- opt.smartindent = true
 
 opt.scrolloff = 8
 
@@ -18,7 +18,7 @@ opt.colorcolumn = "80"
 
 -- vim.cmd.colorscheme("catppuccin_macchiato")
 
-opt.pastetoggle = "<F3>"
+-- opt.pastetoggle = "<F3>"
 
 opt.hlsearch = false
 opt.incsearch = true
@@ -38,3 +38,5 @@ opt.exrc = true
 opt.wildmode = "longest:full,full"
 
 opt.clipboard = "unnamedplus"
+
+vim.lsp.enable('clangd')

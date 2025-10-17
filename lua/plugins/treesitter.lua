@@ -1,19 +1,20 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    version = false, -- last release is way too old and doesn't work on Windows
-    build = ":TSUpdate",
-    event = { "BufReadPost", "BufNewFile" },
+ keybinding = "<leader>Fc"    build = ":TSUpdate",
+	lazy = false;
     cmd = { "TSUpdateSync" },
     keys = {
-        { "<c-space>", desc = "Increment selection" },
+        { "<c-s>", desc = "Increment selection" },
         { "<bs>",      desc = "Decrement selection", mode = "x" },
     },
+	opts_extend = { "ensure_installed" },
+	
     ---@type TSConfig
     opts = {
         ensure_installed = { "c", "cpp", "python", "lua", "vim", "html",
-            "css", "javascript", "json", "latex", "markdown", "markdown_inline",
-            "ocaml" },
+            "css", "javascript", "json", "latex", "markdown", "markdown_inline"},
 
+		folds = { enable = true },
         -- Install parsers synchronously (only applied to `ensure_installed`)
         sync_install = false,
 
@@ -39,11 +40,15 @@ return {
         incremental_selection = {
             enable = true,
             keymaps = {
-                init_selection = "<C-space>",
-                node_incremental = "<C-space>",
+                init_selection = "<C-S>",
+                node_incremental = "<C-S>",
                 scope_incremental = false,
                 node_decremental = "<bs>",
             },
         },
     },
+	 config = function(_, opts)
+    	local TS = require("nvim-treesitter.configs")
+		TS.setup(opts)
+	end,
 }

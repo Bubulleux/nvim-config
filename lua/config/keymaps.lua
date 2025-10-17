@@ -38,3 +38,15 @@ map("n", "<leader>yy", '"+yy')
 -- map("n", "<leader>fa", ":LspZeroFormat<CR>", { desc = "Format all file" })
 
 map("i", "£", "\\")
+
+local keyset = vim.keymap.set
+
+keyset("i", "<c-j>", "<Cmd>lua vim.snippet.jump(1)<CR>")
+keyset({"i", "n"}, "<F4>", "<Cmd>lua vim.lsp.buf.code_action()<CR>")
+
+keyset("n", "gd", "<Cmd>Telescope lsp_definitions<CR>", {silent = true})
+keyset("n", "gy", "<Cmd>Telescope lsp_type_definitions<CR>", {silent = true})
+keyset("n", "gi", "<Cmd>Telescope lsp_implementations<CR>", {silent = true})
+keyset("n", "gr", "<Cmd>Telescope lsp_references<CR>", {silent = true})
+
+vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)

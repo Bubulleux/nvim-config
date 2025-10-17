@@ -10,12 +10,12 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "ù"
 
-require("lazy").setup({
-    spec = {
-        { import = "plugins" },
-    },
-    defaults = {
-        lazy = false,
-    },
-    -- install = { colorscheme = { "catppuccin_macchiato", "habamax" }},
-})
+ require("lazy").setup({
+      spec = {
+          { import = "plugins" },
+      },
+     -- defaults = {
+     --     lazy = false,
+     -- },
+     -- install = { colorscheme = { "catppuccin_macchiato", "habamax" }},
+ })
