@@ -1,6 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
- keybinding = "<leader>Fc"    build = ":TSUpdate",
+ 	build = ":TSUpdate",
 	lazy = false;
     cmd = { "TSUpdateSync" },
     keys = {
