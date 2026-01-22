@@ -7,7 +7,7 @@ opt.wrap = false
 
 opt.tabstop = 4
 opt.shiftwidth = 4
-opt.expandtab = fasle
+opt.expandtab = false
 -- opt.autoindent = true
 -- opt.smartindent = true
 
@@ -23,7 +23,7 @@ opt.colorcolumn = "80"
 opt.hlsearch = false
 opt.incsearch = true
 
-opt.mouse = ""
+-- opt.mouse = ""
 
 opt.cursorline = true
 

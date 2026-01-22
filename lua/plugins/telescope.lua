@@ -15,7 +15,7 @@ return {
         { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Git status" },
         { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Git branchs" },
 
-        { "<leader>d", "<cmd>Telescope diagnostics<cr>", desc = "Dignostic" },
+        { "<leader>fd", "<cmd>Telescope diagnostics<cr>", desc = "Dignostic" },
 
         { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Jump list" },
         { "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Jump list" },
