@@ -26,10 +26,9 @@ map("n", "<C-J>", ":bnext<CR>")
 map("n", "<C-K>", ":bprevious<CR>")
 
 -- Copy to clipboard
-map("v", "<leader>y", '"+y')
+map("v", "<leader>yy", '"+y')
 map("n", "<leader>Y", '"+yg_')
-map("n", "<leader>y", '"+y')
-map("n", "<leader>yy", '"+yy')
+map("n", "<leader>yu", '"+yy')
 
 
 -- map("n", "<leader>p", '"+p')

@@ -1,7 +1,8 @@
 return {
     "nvim-treesitter/nvim-treesitter",
  	build = ":TSUpdate",
-	lazy = false;
+	tag = "v0.10.0",
+	lazy = false,
     cmd = { "TSUpdateSync" },
     keys = {
         { "<c-s>", desc = "Increment selection" },
@@ -47,8 +48,8 @@ return {
             },
         },
     },
-	 config = function(_, opts)
-    	local TS = require("nvim-treesitter.configs")
-		TS.setup(opts)
-	end,
+	--  config = function(_, opts)
+ --    	local TS = require("nvim-treesitter.configs")
+	-- 	TS.setup(opts)
+	-- end,
 }
