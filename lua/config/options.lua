@@ -10,7 +10,7 @@ opt.shiftwidth = 4
 opt.expandtab = false
 -- opt.autoindent = true
 -- opt.smartindent = true
-opt.signcolumn = 'yes'
+-- opt.signcolumn = 'yes'
 
 opt.scrolloff = 8
 
@@ -40,7 +40,7 @@ opt.exrc = true
 opt.wildmode = "longest:full,full"
 
 -- opt.clipboard = "unnamedplus"
-opt.signcolumn="yes:1"
+opt.signcolumn="yes:2"
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('luals')
