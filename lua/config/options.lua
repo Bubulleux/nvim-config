@@ -10,6 +10,7 @@ opt.shiftwidth = 4
 opt.expandtab = false
 -- opt.autoindent = true
 -- opt.smartindent = true
+opt.signcolumn = 'yes'
 
 opt.scrolloff = 8
 
