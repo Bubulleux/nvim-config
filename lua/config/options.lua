@@ -27,6 +27,7 @@ opt.incsearch = true
 
 opt.cursorline = true
 
+
 -- opt.list = true
 -- opt.listchars:append "lead:⋅"
 -- opt.listchars:append "nbsp:%"
@@ -37,6 +38,8 @@ opt.exrc = true
 
 opt.wildmode = "longest:full,full"
 
-opt.clipboard = "unnamedplus"
+-- opt.clipboard = "unnamedplus"
+opt.signcolumn="yes:1"
 
 vim.lsp.enable('clangd')
+vim.lsp.enable('luals')
