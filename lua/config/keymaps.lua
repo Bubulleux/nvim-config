@@ -48,4 +48,9 @@ keyset("n", "gy", "<Cmd>Telescope lsp_type_definitions<CR>", {silent = true})
 keyset("n", "gi", "<Cmd>Telescope lsp_implementations<CR>", {silent = true})
 keyset("n", "gr", "<Cmd>Telescope lsp_references<CR>", {silent = true})
 
+keyset("n", "<leader>mm", ":!make<CR>");
+keyset("n", "<leader>mr", ":!make re<CR>");
+keyset("n", "<leader>mc", ":!make clean<CR>");
+keyset("n", "<leader>mf", ":!make fclean<CR>");
+
 vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
