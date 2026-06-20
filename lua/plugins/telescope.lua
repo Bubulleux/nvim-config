@@ -18,7 +18,8 @@ return {
         { "<leader>fd", "<cmd>Telescope diagnostics<cr>", desc = "Dignostic" },
 
         { "<leader>j", "<cmd>Telescope jumplist<cr>", desc = "Jump list" },
-        { "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Jump list" },
+        { "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Symbole" },
+        { "<leader>ps", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Workspace Symbole" },
         -- { "<leader>r", "<cmd>Telescope lsp_references<cr>", desc = "Lsp References" },
     },
 }

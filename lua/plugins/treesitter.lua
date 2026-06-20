@@ -48,8 +48,8 @@ return {
             },
         },
     },
-	--  config = function(_, opts)
- --    	local TS = require("nvim-treesitter.configs")
-	-- 	TS.setup(opts)
-	-- end,
+	config = function(_, opts)
+    	local TS = require("nvim-treesitter.configs")
+		TS.setup(opts)
+	end,
 }
