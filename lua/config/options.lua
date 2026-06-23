@@ -43,4 +43,5 @@ opt.wildmode = "longest:full,full"
 opt.signcolumn="yes:2"
 
 vim.lsp.enable('clangd')
-vim.lsp.enable('luals')
+vim.lsp.enable('jedi_language_server')
+vim.lsp.enable('lua_ls')
