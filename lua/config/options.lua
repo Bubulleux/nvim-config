@@ -43,7 +43,6 @@ opt.wildmode = "longest:full,full"
 opt.signcolumn="yes:2"
 
 vim.lsp.enable('clangd')
-vim.lsp.enable('luals')
 vim.lsp.enable('eslint')
 
 vim.lsp.enable('svelte')
@@ -61,3 +60,15 @@ vim.lsp.config("eslint", {
     })
   end,
 })
+
+vim.lsp.enable('qmlls')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('dartls')
+
+vim.lsp.config("qml-language-server", {
+  cmd = { "qml-language-server" },
+  filetypes = { "qml" },
+  root_markers = { { "qmldir", "shell.qml" }, ".git" },
+})
+
+vim.lsp.enable("qml-language-server")
