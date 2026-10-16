@@ -43,10 +43,14 @@ opt.wildmode = "longest:full,full"
 opt.signcolumn="yes:2"
 
 vim.lsp.enable('clangd')
-vim.lsp.enable('eslint')
+-- vim.lsp.enable('eslint')
 
 vim.lsp.enable('svelte')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('tailwindcss')
+vim.lsp.config["tailwindcss"] = {
+	filetypes = {"html", "svelte"},
+}
 
 local base_on_attach = vim.lsp.config.eslint.on_attach
 vim.lsp.config("eslint", {
@@ -72,3 +76,8 @@ vim.lsp.config("qml-language-server", {
 })
 
 vim.lsp.enable("qml-language-server")
+
+
+-- Neoformat
+vim.g.neoformat_try_node_exe = 1
+-- vim.g.neoformat_enabled_typescript = {'npx prettier -write'}

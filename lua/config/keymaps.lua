@@ -56,3 +56,5 @@ keyset("n", "<leader>mf", ":wa<CR>:!make fclean<CR>");
 map('n', '<leader>h', "<cmd>Ouroboros<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
+
+map('n', '<leader>==', "<cmd>Neoformat<CR>", { noremap = true, silent = true })
